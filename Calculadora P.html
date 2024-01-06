@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calificacion</title>
+</head>
+<body>
+    <script>
+        let nombre=prompt('Favor introducir su nombre');
+        // document.write(`Mi nombre es ${nombre}`); //
+        
+        let mat=parseInt(prompt('Calificacion de Matematica'));
+        let lenguaje=parseInt(prompt('Calificacion de Lenguaje'));
+        let español=parseInt(prompt('Calificacion de Español'));
+        let sociales=parseInt(prompt('Calificacion de Sociales'));
+        let resultado=(mat+lenguaje+español+sociales)/4;
+        
+        document.write(`Hola ${nombre}, El resultado de la calificacion es:
+        ${resultado} <br/>`);
+
+        // estrutura de control//
+        if(resultado<70){
+            document.write(`Usted a: <span style = 'color : red'>Reprobado</span>`);
+        }
+        else if(resultado >= 70 && resultado <= 79 ){
+            document.write(`Usted pasó a: <span style = 'color : yellow'>Chepa</span>`);
+        }
+        else if(resultado >= 80 && resultado <= 89 ){
+            document.write(`Usted tiene una nota: <span style = 'color : blue'>Buena</span>`);
+        }
+        else if(resultado >= 90){
+            document.write(`Usted tiene una nota: <span style = 'color : green'>Exelente, Felicidades!</span`);
+        }
+    </script>
+</body>
+</html>
