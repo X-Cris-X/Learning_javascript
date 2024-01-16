@@ -1,13 +1,14 @@
-// juego de adivinanzas // continuo al dia siguiente
+// juego de adivinanzas 
 
-let numberUser = number;
+// colocas el numero en la variable de numberUser y mira a ver si es que adivinas 
+
+let numberUser = 60;
 let numberRandom = Math.floor(Math.random() * 100) + 1;
 
 console.log(numberRandom);
-/*
-if(numberRandom === number){
-    console.log(number + ' = ' + numberRandom + ' Adivinaste el numero');
+
+if(numberRandom === numberUser){
+    console.log(numberUser + ' = ' + numberRandom + ' Adivinaste el numero');
 }else{
-    console.log(number + ' = ' + numberRandom + ' No adivinaste');
+    console.log(numberUser + ' = ' + numberRandom + ' No adivinaste');
 }
-*/
